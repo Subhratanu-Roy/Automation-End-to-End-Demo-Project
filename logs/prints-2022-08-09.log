@@ -1,0 +1,4 @@
+22:22:15.115 [TestNG-test=Test-2] INFO  com.mystore.utilities.Log - ================================OrderHistory Test Test end==============================================
+22:22:15.191 [AsyncHttpClient-1-6] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+22:22:15.644 [AsyncHttpClient-1-7] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+22:22:26.518 [TestNG-test=Test-2] INFO  com.mystore.utilities.Log - ================================WishList Test Test start===========================================

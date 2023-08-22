@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="18" total="26" passed="5" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-13T13:39:22 IST" name="Suite" finished-at="2022-08-13T13:44:25 IST" duration-ms="303330">
+    <groups>
+      <group name="Sanity">
+        <method signature="TC_LoginPage.validateLogin(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.TC_LoginPage@fd46303]" name="validateLogin" class="com.mystore.testcases.TC_LoginPage"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="TC_HomePage.orderHistoryTest()[pri:0, instance:com.mystore.testcases.TC_HomePage@60d8c0dc]" name="orderHistoryTest" class="com.mystore.testcases.TC_HomePage"/>
+        <method signature="TC_HomePage.wishListTest()[pri:0, instance:com.mystore.testcases.TC_HomePage@60d8c0dc]" name="wishListTest" class="com.mystore.testcases.TC_HomePage"/>
+        <method signature="TC_IndexPage.validateLogo()[pri:0, instance:com.mystore.testcases.TC_IndexPage@29a60c27]" name="validateLogo" class="com.mystore.testcases.TC_IndexPage"/>
+        <method signature="TC_IndexPage.validateTitle()[pri:0, instance:com.mystore.testcases.TC_IndexPage@29a60c27]" name="validateTitle" class="com.mystore.testcases.TC_IndexPage"/>
+        <method signature="TC_LoginPage.validateLogin(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.TC_LoginPage@fd46303]" name="validateLogin" class="com.mystore.testcases.TC_LoginPage"/>
+        <method signature="TC_SearchResultPage.validateProductAvailability(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" name="validateProductAvailability" class="com.mystore.testcases.TC_SearchResultPage"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-08-13T13:39:22 IST" name="Smoke Test" finished-at="2022-08-13T13:44:25 IST" duration-ms="303330">
+      <class name="com.mystore.testcases.TC_OrderPage">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testcases.TC_OrderPage@63c5efee]" started-at="2022-08-13T13:39:21 IST" name="loadConfig" finished-at="2022-08-13T13:39:22 IST" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.mystore.testcases.TC_OrderPage@63c5efee]" started-at="2022-08-13T13:44:25 IST" name="afterSuite" finished-at="2022-08-13T13:44:26 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.mystore.testcases.TC_OrderPage -->
+      <class name="com.mystore.testcases.TC_SearchResultPage">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" started-at="2022-08-13T13:40:41 IST" name="setUp" finished-at="2022-08-13T13:42:23 IST" duration-ms="101499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateProductAvailability(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" started-at="2022-08-13T13:42:23 IST" name="validateProductAvailability" data-provider="productname" finished-at="2022-08-13T13:42:26 IST" duration-ms="3091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T-Shirt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductAvailability -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" started-at="2022-08-13T13:42:26 IST" name="tearDown" finished-at="2022-08-13T13:42:27 IST" duration-ms="1533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" started-at="2022-08-13T13:42:27 IST" name="setUp" finished-at="2022-08-13T13:42:39 IST" duration-ms="12117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateProductAvailability(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" started-at="2022-08-13T13:42:39 IST" name="validateProductAvailability" data-provider="productname" finished-at="2022-08-13T13:43:11 IST" duration-ms="31984" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jeans]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.mystore.testcases.TC_SearchResultPage.validateProductAvailability(TC_SearchResultPage.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductAvailability -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" started-at="2022-08-13T13:43:12 IST" name="tearDown" finished-at="2022-08-13T13:43:13 IST" duration-ms="1688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" started-at="2022-08-13T13:43:13 IST" name="setUp" finished-at="2022-08-13T13:43:24 IST" duration-ms="10751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateProductAvailability(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" started-at="2022-08-13T13:43:24 IST" name="validateProductAvailability" data-provider="productname" finished-at="2022-08-13T13:43:56 IST" duration-ms="32412" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pants]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.mystore.testcases.TC_SearchResultPage.validateProductAvailability(TC_SearchResultPage.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductAvailability -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_SearchResultPage@6a62689d]" started-at="2022-08-13T13:43:56 IST" name="tearDown" finished-at="2022-08-13T13:43:58 IST" duration-ms="1719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mystore.testcases.TC_SearchResultPage -->
+      <class name="com.mystore.testcases.TC_LoginPage">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_LoginPage@fd46303]" started-at="2022-08-13T13:39:23 IST" name="setUp" finished-at="2022-08-13T13:39:44 IST" duration-ms="20827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLogin(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.TC_LoginPage@fd46303]" started-at="2022-08-13T13:39:44 IST" name="validateLogin" data-provider="credentials" finished-at="2022-08-13T13:39:59 IST" duration-ms="14876" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@xyz.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://automationpractice.com/index.php?controller=my-account] but found [http://automationpractice.com/index.php?controller=my-account123]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://automationpractice.com/index.php?controller=my-account] but found [http://automationpractice.com/index.php?controller=my-account123]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.mystore.testcases.TC_LoginPage.validateLogin(TC_LoginPage.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_LoginPage@fd46303]" started-at="2022-08-13T13:39:59 IST" name="tearDown" finished-at="2022-08-13T13:40:01 IST" duration-ms="1859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mystore.testcases.TC_LoginPage -->
+      <class name="com.mystore.testcases.TC_HomePage">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_HomePage@60d8c0dc]" started-at="2022-08-13T13:40:01 IST" name="setUp" finished-at="2022-08-13T13:40:13 IST" duration-ms="11753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:com.mystore.testcases.TC_HomePage@60d8c0dc]" started-at="2022-08-13T13:40:13 IST" name="orderHistoryTest" finished-at="2022-08-13T13:40:19 IST" duration-ms="6046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_HomePage@60d8c0dc]" started-at="2022-08-13T13:40:19 IST" name="tearDown" finished-at="2022-08-13T13:40:20 IST" duration-ms="1515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_HomePage@60d8c0dc]" started-at="2022-08-13T13:40:20 IST" name="setUp" finished-at="2022-08-13T13:40:31 IST" duration-ms="11376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="wishListTest()[pri:0, instance:com.mystore.testcases.TC_HomePage@60d8c0dc]" started-at="2022-08-13T13:40:31 IST" name="wishListTest" finished-at="2022-08-13T13:40:40 IST" duration-ms="8065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wishListTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_HomePage@60d8c0dc]" started-at="2022-08-13T13:40:40 IST" name="tearDown" finished-at="2022-08-13T13:40:41 IST" duration-ms="1488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mystore.testcases.TC_HomePage -->
+      <class name="com.mystore.testcases.TC_IndexPage">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_IndexPage@29a60c27]" started-at="2022-08-13T13:43:58 IST" name="setUp" finished-at="2022-08-13T13:44:10 IST" duration-ms="11575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLogo()[pri:0, instance:com.mystore.testcases.TC_IndexPage@29a60c27]" started-at="2022-08-13T13:44:10 IST" name="validateLogo" finished-at="2022-08-13T13:44:10 IST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_IndexPage@29a60c27]" started-at="2022-08-13T13:44:10 IST" name="tearDown" finished-at="2022-08-13T13:44:11 IST" duration-ms="1518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.mystore.testcases.TC_IndexPage@29a60c27]" started-at="2022-08-13T13:44:11 IST" name="setUp" finished-at="2022-08-13T13:44:23 IST" duration-ms="11985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateTitle()[pri:0, instance:com.mystore.testcases.TC_IndexPage@29a60c27]" started-at="2022-08-13T13:44:23 IST" name="validateTitle" finished-at="2022-08-13T13:44:23 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.TC_IndexPage@29a60c27]" started-at="2022-08-13T13:44:23 IST" name="tearDown" finished-at="2022-08-13T13:44:25 IST" duration-ms="1525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mystore.testcases.TC_IndexPage -->
+    </test> <!-- Smoke Test -->
+  </suite> <!-- Suite -->
+</testng-results>
